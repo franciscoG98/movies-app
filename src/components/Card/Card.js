@@ -1,18 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { PropTypes } from "prop-types";
 
-const Card = (props) => {
+const Card = ({ movie }) => {
     return (
         <div className='col-md-4'>
             <div className='card'>
-                {/* {console.log('props:\n', props.props.Title)} */}
-                <img src={props.props.Poster} alt={props.props.Title} className='card-img-top' width='100' />
+                {/* {console.log('movie:\n', movie.movie.Title)} */}
+                <img src={movie.Poster} alt={movie.Title} className='card-img-top' width='100' />
                 <div className='card-body' >
-                    <h4>{props.props.Title} {props.props.Year}</h4>
-                    <p>{props.props.Type}</p>
+                    <h4>{movie.Title} {movie.Year}</h4>
+                    <p>{movie.Type}</p>
                 </div>
             </div>
         </div>
     )
+}
+
+Card.propTypes = {
+    movie: PropTypes.shape({
+        Title: PropTypes.string,
+        Year: PropTypes.string,
+        Poster: PropTypes.string,
+        Type: PropTypes.string,
+    }).isRequired
 }
 
 export default Card;
