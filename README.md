@@ -43,3 +43,17 @@ Bootstraped with Vite
 React
 
 Styling: sass or taildwind I dont decide yet
+
+### TODO
+
+[] borrar comentarios de form scss
+[] pulir los estilos
+[] crear variables globales para colores
+[] card component para cada pelicula/serie
+[] impletemtar BEM
+[] no nestear estilos
+[] el gitignore viejo esta MAL
+[] esta subido el .env no lo puedo creer
+[] agregar comprobacion si no hay datos
+[] agregar loading state y component
+[] agregar una busqueda inicial por defecto

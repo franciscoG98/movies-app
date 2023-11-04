@@ -1,31 +1,25 @@
-import './App.css'
-import Form from './components/Form/Form'
-import GetMovies from './services/GetMovies'
+import { useState } from "react";
+import Form from "./components/Form/Form";
+import GetMovies from "./services/GetMovies";
+import MovieList from "./components/List/MovieList";
+import "./App.css";
 
 const App = () => {
+  const [movies, setMovies] = useState([]);
 
   const handleSearchSubmit = (searchValue) => {
-    console.log("Valor de búsqueda:", searchValue);
-
-    GetMovies(searchValue);
+    GetMovies(searchValue).then((data) => setMovies(data));
   };
 
   return (
-    <main>
-      <h1>movies-app</h1>
-      <h2>Find your favorites series and movies</h2>
+    <main className="main__layout">
+      <h1 className="app__title">movies-app</h1>
 
-      <section>
-        <Form onSubmit={handleSearchSubmit} />
-        {/* list */}
-      </section>
+      <Form onSubmit={handleSearchSubmit} />
 
-      {/* {
-        console.log('hola apikey', import.meta.env.VITE_API_KEY)
-      } */}
-
+      <MovieList content={movies} />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
