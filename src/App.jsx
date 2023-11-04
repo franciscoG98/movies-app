@@ -1,7 +1,14 @@
 import './App.css'
 import Form from './components/Form/Form'
+import GetMovies from './services/GetMovies'
 
 const App = () => {
+
+  const handleSearchSubmit = (searchValue) => {
+    console.log("Valor de búsqueda:", searchValue);
+
+    GetMovies(searchValue);
+  };
 
   return (
     <main>
@@ -9,13 +16,13 @@ const App = () => {
       <h2>Find your favorites series and movies</h2>
 
       <section>
-        <Form />
+        <Form onSubmit={handleSearchSubmit} />
         {/* list */}
       </section>
 
-      {
+      {/* {
         console.log('hola apikey', import.meta.env.VITE_API_KEY)
-      }
+      } */}
 
     </main>
   )

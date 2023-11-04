@@ -1,20 +1,19 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import "./formStyles.scss";
 
-const Form = () => {
+const Form = ({ onSubmit }) => {
   const [inputSearch, setInputSearch] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputSearch);
+    onSubmit(inputSearch);
   };
 
   return (
-    <form className="form_container" onSubmit={(e) => handleSubmit(e)}>
+    <form className="form_container" onSubmit={handleSubmit}>
 
       <label htmlFor="serach">Search your favorite series or movie:</label>
-
-      <br />
 
       <fieldset>
         <input
