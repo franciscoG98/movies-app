@@ -1,14 +1,13 @@
 const OMDB_API = `http://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&s=`;
 
-const GetMovies = async (inputSearch) => {
-  try {
-    const res = await fetch(OMDB_API + inputSearch);
-    const data = await res.json(res);
+const GetMovies = (inputSearch) => {
 
-    return data.Search;
-  } catch (error) {
-    throw new Error('Error: ', error);
-  }
+  const res = fetch(OMDB_API + inputSearch)
+    .then(res => res.json())
+    .then(data => data.Search)
+    .catch(err => console.log('Error: ', err))
+
+  return res
 }
 
 export default GetMovies;
