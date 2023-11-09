@@ -1,8 +1,10 @@
 .movies__list {
   border: 1px solid red;
-
   display: grid;
+  place-items: center;
+  margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
   padding: 20px;
+  width: fit-content;
 }
