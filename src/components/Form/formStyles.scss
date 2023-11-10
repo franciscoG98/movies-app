@@ -1,5 +1,6 @@
 .form_container {
   margin: auto;
+  margin-top: 20px;
   width: 320px;
 
   input::selection, input::-moz-selection {
@@ -11,9 +12,8 @@
     border: none;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 15px 0;
     padding: 0;
-    width: 320px;
 
     input {
       border:2px solid var(--main-white); 

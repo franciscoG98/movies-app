@@ -46,7 +46,8 @@ Styling: sass or taildwind I dont decide yet
 
 ### TODO
 
-[] borrar comentarios de form scss
+[] responsive design
+[x] borrar comentarios de form scss
 [x] pulir los estilos
 [x] crear variables globales para colores
 [x] card component para cada pelicula/serie
