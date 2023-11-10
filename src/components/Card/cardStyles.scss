@@ -2,14 +2,16 @@
   border: 1px solid var(--main-white);
   border-radius: 20px;
   min-height: 400px;
-  width: min-content;
+  width: 250px;
 }
 
 .card__img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  min-height: 300px;
+  min-width: 248px;
   height: 300px;
-  width: 250px;
+  width: 248px;
 }
 
 .card__title {
