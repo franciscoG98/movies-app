@@ -5,5 +5,7 @@
 }
 
 .app__title {
-  margin-left: 20px;
+  margin: 30px auto auto 11%;
+  width: fit-content;
+  text-transform: uppercase;
 }

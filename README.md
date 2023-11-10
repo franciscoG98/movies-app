@@ -47,9 +47,9 @@ Styling: sass or taildwind I dont decide yet
 ### TODO
 
 [] borrar comentarios de form scss
-[] pulir los estilos
-[] crear variables globales para colores
-[] card component para cada pelicula/serie
+[x] pulir los estilos
+[x] crear variables globales para colores
+[x] card component para cada pelicula/serie
 [] impletemtar BEM
 [] no nestear estilos
 [] el gitignore viejo esta MAL

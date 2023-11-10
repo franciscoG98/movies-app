@@ -1,7 +1,7 @@
 .movies__list {
-  border: 1px solid red;
+  // border: 1px solid red;
   display: grid;
-  place-items: center;
+  place-items: start center;
   margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
