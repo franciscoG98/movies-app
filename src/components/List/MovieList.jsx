@@ -4,6 +4,7 @@ import NotFound from "../NotFound/NotFound";
 import "./listStyles.scss";
 
 const MovieList = ({ content }) => {
+
   return (
     <>
       {content ? (
@@ -16,6 +17,7 @@ const MovieList = ({ content }) => {
                 src={item.Poster}
                 alt={item.Title + " poster"}
                 year={item.Year}
+                type={item.Type}
               />
             ))
           }

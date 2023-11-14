@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Form from "./components/Form/Form";
 import GetMovies from "./services/GetMovies";
 import MovieList from "./components/List/MovieList";
@@ -6,6 +6,10 @@ import "./App.css";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    GetMovies('shameless').then((data) => setMovies(data));
+  }, []);
 
   const handleSearchSubmit = (searchValue) => {
     GetMovies(searchValue).then((data) => setMovies(data));
