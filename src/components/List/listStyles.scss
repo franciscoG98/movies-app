@@ -1,5 +1,4 @@
 .movies__list {
-  // border: 1px solid red;
   display: grid;
   place-items: start center;
   margin: auto;
@@ -7,4 +6,22 @@
   gap: 15px;
   padding: 20px;
   width: fit-content;
+}
+
+@media only screen and (max-width: 800px) {
+  .movies__list {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    place-items: center;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .movies__list {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    place-items: center;
+    width: 80vw;
+  }
 }

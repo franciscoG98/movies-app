@@ -8,6 +8,7 @@ const GetMovies = (inputSearch) => {
     .catch(err => console.log('Error: ', err))
 
   return res
+
 }
 
 export default GetMovies;
