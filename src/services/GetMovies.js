@@ -1,4 +1,4 @@
-const OMDB_API_URL = `//www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&s=`;
+const OMDB_API_URL = `https://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}&s=`;
 
 const GetMovies = (inputSearch) => {
 
