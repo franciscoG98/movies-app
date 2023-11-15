@@ -13,7 +13,7 @@ const Form = ({ onSubmit }) => {
   return (
     <form className="form_container" onSubmit={handleSubmit}>
 
-      <label htmlFor="serach">Search your favorite series or movie:</label>
+      <label htmlFor="serach">Search your favorite series or movies:</label>
 
       <fieldset>
         <input

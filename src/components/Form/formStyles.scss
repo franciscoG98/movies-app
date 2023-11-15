@@ -39,3 +39,17 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .form_container {
+    label {
+      display: flex;
+      margin: auto;
+      width: fit-content;
+    }
+
+    fieldset {
+      margin: auto;
+      width: fit-content;
+    }
+  }
+}
