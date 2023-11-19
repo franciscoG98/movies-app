@@ -3,8 +3,6 @@ import "./cardStyles.scss";
 
 const Card = ({ title, src, alt, year, type }) => {
 
-  console.log('source: ', src);
-
   return (
     <>
       {
