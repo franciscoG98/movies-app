@@ -2,7 +2,7 @@ const OMDB_API_URL = `https://www.omdbapi.com/?apikey=${import.meta.env.VITE_API
 
 const GetMovies = (inputSearch) => {
 
-  const res = fetch(OMDB_API_URL + inputSearch)
+  const res = fetch(OMDB_API_URL + inputSearch, {mode: "no-cors"})
     .then(res => res.json())
     .then(data => data.Search)
     .catch(err => console.log('Error: ', err))
